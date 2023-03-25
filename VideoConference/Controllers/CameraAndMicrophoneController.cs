@@ -4,34 +4,32 @@ using VideoConference.Models;
 
 namespace VideoConference.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class CameraAndMicrophoneController : Controller
     {
-        [HttpPost]
-        public void addNewParticipant([FromBody] int userId, int roomId)
-        {
-            //add a new participant to a specific room.
-        }
         [HttpPatch]
-        public void changeCameraMode([FromBody] int userId)
+        public void changeCameraMode([FromBody] int userId, bool onOrOff)
         {
             //Bring the userID to the API of the camera
-            //the camera will be opened or closed.
+            //the camera mode will be changed
+            //IsCameraOn property will be changed
         }
 
         [HttpPatch]
         
-        public void changeMicrophoneMode([FromBody] int userId, int clickerId)
+        public void changeMicrophoneMode([FromBody] int userId, bool mute)
         {
             //Bring the userID to the API of the microphone
-            //the microphone will be opened or closed.
+            //the microphone mode will be changed
         }
 
         [HttpPatch]
 
-        public void muteAllParticipants([FromBody]int clickerId, int [] userIds)
+        public void muteAllParticipants([FromBody]int userId, int conferenceId)
         {
-            //check if the clicker is judge and has admin permissions.
-            //if so, mute all - update the API of the microphone to mute all the participants.
+            //check is userId has permissions
+            //if so, mute all - update the API of the microphone to mute all the participants in that conference.
             //if not throw exception
         }
     }

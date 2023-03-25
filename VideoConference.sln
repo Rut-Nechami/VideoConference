@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoConference", "VideoConference\VideoConference.csproj", "{61590410-C4F2-4503-B517-E22CE453866D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoConference", "VideoConference\VideoConference.csproj", "{61590410-C4F2-4503-B517-E22CE453866D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{DEEA06BE-912C-42F5-BCA4-01035E5F630B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{C011DE5B-879C-46B4-9E39-96A554894640}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{61590410-C4F2-4503-B517-E22CE453866D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61590410-C4F2-4503-B517-E22CE453866D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61590410-C4F2-4503-B517-E22CE453866D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEA06BE-912C-42F5-BCA4-01035E5F630B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEA06BE-912C-42F5-BCA4-01035E5F630B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEA06BE-912C-42F5-BCA4-01035E5F630B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEA06BE-912C-42F5-BCA4-01035E5F630B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C011DE5B-879C-46B4-9E39-96A554894640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C011DE5B-879C-46B4-9E39-96A554894640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C011DE5B-879C-46B4-9E39-96A554894640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C011DE5B-879C-46B4-9E39-96A554894640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
